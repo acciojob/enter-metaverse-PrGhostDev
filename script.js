@@ -1,9 +1,11 @@
 //your JS code here. If required.
+// Get references to the elements by their IDs
 const statusParagraph = document.getElementById("status");
 const enterButton = document.getElementById("enterBtn");
 
-// Add a click event listener to the button
 enterButton.addEventListener("click", function () {
-    statusParagraph.textContent = "Entered Metaverse";
-    statusParagraph.tagName = "Hh";
+    // Create a new h1 element
+    const newHeading = document.createElement("h1");
+    newHeading.textContent = "Entered Metaverse";
+    statusParagraph.replaceWith(newHeading);
 });
